@@ -1,0 +1,93 @@
+<!-- shopping.html (same as before, already redirects to hapybirthday.html) -->
+
+
+<!-- hapybirthday.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 Surprise 🎂</title>
+<style>
+    body {
+        margin:0;
+        font-family: Arial;
+        background: #ffb6c1;
+        overflow:hidden;
+        color:white;
+        text-align:center;
+    }
+
+    .center {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+
+    h1 {
+        font-size:2.5em;
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { text-shadow:0 0 10px white; }
+        to { text-shadow:0 0 30px yellow; }
+    }
+
+    .pfp {
+        width:180px;
+        height:180px;
+        border-radius:50%;
+        object-fit:cover;
+        margin:20px 0;
+        border:4px solid white;
+    }
+
+    .marquee {
+        position:absolute;
+        bottom:10px;
+        width:100%;
+        font-size:1.2em;
+        animation: move 25s linear infinite;
+    }
+
+    @keyframes move {
+        from { transform: translateX(100%); }
+        to { transform: translateX(-100%); }
+    }
+
+    .corner {
+        position:absolute;
+        width:120px;
+    }
+
+    .top-left { top:10px; left:10px; }
+    .top-right { top:10px; right:10px; }
+    .bottom-left { bottom:10px; left:10px; }
+    .bottom-right { bottom:10px; right:10px; }
+</style>
+</head>
+<body>
+
+<!-- Corner Images -->
+<img src="cute.png" class="corner top-left">
+<img src="blush.gif" class="corner top-right">
+<img src="cute.png" class="corner bottom-left">
+<img src="blush.gif" class="corner bottom-right">
+
+<div class="center">
+    <h1> Happy Birthday Sannvi 🎂</h1>
+    <h2>@bhadmejaoyr </h2>
+
+    <img src="bleh.jpeg" class="pfp">
+
+    <p>CSK fangirl +1 ✨</p>
+</div>
+
+<div class="marquee">
+    pfp so goated it replaced real photo 🔥
+</div>
+
+</body>
+</html>
